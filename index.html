@@ -13,17 +13,19 @@
     <!--Style.css-->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="dark-mode.css">
+
     <!--Favicon-->
     <link rel="icon" href="favicon.ico?">
     <title>Kousik Das - Interactive Resume</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container top">
-        <nav class="navbar navbar-expand-lg navbar-light  navbar-transparent ">
-            <div class="container-fluid full">
+    <div class="container-fluid top">
+        <nav class="navbar navbar-expand-lg navbar-transparent ">
+            <div class="container-fluid">
               <!-- <a class="navbar-brand" href="#"></a> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -43,9 +45,20 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#projetcs">Projetcs</a>
                   </li>
+                  <li class="nav-item">
+                    <div class="theme" style="padding-right: 20px; padding-left: 10px;">
+                      <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                          </label>
+                      <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+                    </div>
+                  </li>
                   
                 </ul>
-                <a class="btn contactnav" href="mailto:kousikdas02@gmail.com.com" role="button" style="border: 2px solid #4fb39c; border-radius: 10px;">Contact Me</a>
+                <!-- <a class="btn contactnav" href="mailto:kousikdas02@gmail.com.com" role="button" style="border: 2px solid #4fb39c; border-radius: 10px;">Contact Me</a> -->
+              
+              
               </div>
             </div>
           </nav>
@@ -319,7 +332,7 @@
             </ul>
           </div>
         </div>
-        <hr style="margin: 40px 0;">
+        <!-- <hr style="margin: 40px 0;"> -->
       </div>
     </div>
 
@@ -340,7 +353,7 @@
               <div class="card-body">
                 <h5 class="card-title">Portfolio Website</h5>
                 <p class="card-text">Portfolio Website built with HTML, CSS, Bootstrap and JavaScript</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
+                <a href="#" class="btn btn-primary github-color">See Project on GitHub</a>
               </div>
             </div>
           </div>
@@ -350,7 +363,7 @@
               <div class="card-body">
                 <h5 class="card-title">GUI APP For Real Time Weather Detection</h5>
                 <p class="card-text">A GUI app built using Python that detects real-time weather.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
+                <a href="#" class="btn btn-primary github-color">See Project on GitHub</a>
               </div>
             </div>
           </div>
@@ -361,7 +374,7 @@
               <div class="card-body">
                 <h5 class="card-title">Speech To Text Notepad</h5>
                 <p class="card-text">A GUI app built with Python Tkinter library.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
+                <a href="#" class="btn btn-primary github-color">See Project on GitHub</a>
               </div>
             </div>
           </div>
@@ -371,7 +384,7 @@
               <div class="card-body">
                 <h5 class="card-title">Sentiment Analysis From Text</h5>
                 <p class="card-text">Sentiment Analysis with NLTK's Vader analyzer.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
+                <a href="#" class="btn btn-primary github-color">See Project on GitHub</a>
               </div>
             </div>
           </div>
@@ -395,7 +408,7 @@
                   </div>
                </div>
           </div> 
-  </div>
+        </div>
       </div>
       <div class="social-media">
         <a class="btn linkedin" role="button" onclick="window.open('https://www.linkedin.com/in/kousik-das-493300204/')"><i class="fab fa-linkedin-in fa-2x"></i></a>
@@ -404,6 +417,40 @@
       </div>
     </div>
 
+
+   
+
+    <script>
+       // function to set a given theme/color-scheme
+       function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+            }
+        })();
+
+    </script>
+    
+
+    
     <!--Main JavaScript File-->
     <script src="main.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->

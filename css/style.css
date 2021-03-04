@@ -7,7 +7,8 @@ body{
     /* box-sizing: border-box; */
 }
 .top{
-    background-image: url(/images/iron-man-1.jpg) ;
+    background-image: url(/images/iron-man-trans.png);
+    background-color: var(--background-color-primary);
     height: 45rem;
     max-width: 100%;
     text-align: center;
@@ -18,6 +19,31 @@ body{
     
      
 }
+
+
+.theme-light{
+    --color-primary: #ffffff;
+    --color-secondary: #000;
+    --heading-color: #4fb39c;
+    --background-color-primary: #f3efe0;
+    --card-color: #000;
+    --card-color-text:#ffffff;
+    --hover-skills:#000;
+    
+}
+
+.theme-dark{
+    --color-primary: #000;
+    --color-secondary: #ffffff;
+    --heading-color: #4fb39c;
+    --background-color-primary: #1a1a1a;
+    --card-color: #1a1a1a;
+    --card-color-text:#ffffff;
+    --hover-skills:#000;
+}
+
+
+
 
 
 .top-container{
@@ -37,6 +63,7 @@ body{
     text-align: center;
     /* position:sticky; */
     /* color: white; */
+    color: var(--color-secondary);
 }
 .typed-text{
     color: #4fb39c;
@@ -45,18 +72,20 @@ body{
     display: inline-block;
     font-size: 3vw;
     width: 3px;
-    background-color: black;
+    background-color: var(--color-secondary);
     margin-left: 0.1rem;
     animation: blink 1s infinite;
 
 }
 @keyframes blink{
-    0% {background-color: black;}
+    0% {background-color: var(--color-secondary);}
     50% {background-color: transparent;}
     97% {background-color: transparent;}
-    100% {background-color: black;}
+    100% {background-color: var(--color-secondary);}
 }
-
+.navbar .navbar-nav li a{
+    color: var(--color-secondary);
+}
 .navbar-nav{
     /* width: 100%; */
     margin-left: auto!important;
@@ -64,14 +93,15 @@ body{
 }
 
 .nav-item a:hover{
-    /* border-top: 2px solid #4fb39c; */
+    /* border-bottom: 2px solid #4fb39c; */
     color: #4fb39c!important;
     /* font-size: 20px; */
+    font-weight: bold;
     text-decoration: underline ;
     text-underline-position: under;
 }
 .contactnav:hover{
-    background-color: #4fb39c;
+    background-color: var(--heading-color);
     color: white!important;
 }
 .profile-img{
@@ -83,7 +113,9 @@ body{
 }
 
 #profile{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 .profile{
     text-align: center;
@@ -95,12 +127,12 @@ body{
     text-align: center;
 }
 .insta-follow{
-    color: white;
+    color: var(--color-primary);
     background-color: rgb(34, 136, 219);
     margin: 10px 0;
 }
 .insta-follow:hover{
-    color: white;
+    color: var(--color-primary);
     background-color: rgb(30, 108, 172);
 }
 #resume{
@@ -130,7 +162,8 @@ body{
 
 
 #experiences{
-    background-color: #f3efe0;
+    background-color: var(--background-color-primary);
+    color: var(--color-secondary);
 }
 #experience-row{
     text-align: center;
@@ -147,10 +180,14 @@ body{
     color: #4fb39c;
     
 }
+#abilities{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
 
 #abilities-row{
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
     color: #4fb39c;
 }
 .no-bullets{
@@ -168,6 +205,7 @@ body{
 
 .skill-list li:hover{
     background-color: #d6e4e1;
+    color: var(--hover-skills)!important;
 }
 
 .project-details{
@@ -183,8 +221,15 @@ body{
 .project-details a:hover{
     color: white;
     background-color: #2c7a68;
+    color: var(--hover-skills)!important;
 }
-
+.github-color {
+    background-color: #4fb39c;
+    border: none;
+}
+.github-color:hover{
+    background-color: #2c7a68;
+}
 #languages ul>li{
     min-height: 30px;
     padding: 5px 0;
@@ -192,6 +237,7 @@ body{
 
 .languages-list li:hover{
     background-color: #d6e4e1;
+    color: var(--hover-skills)!important;
 }
 
 #tools ul>li{
@@ -201,11 +247,13 @@ body{
 
 #tools ul>li:hover{
     background-color: #d6e4e1;
+    color: var(--hover-skills)!important;
 }
 
 #projetcs{
-    background-color: #f3efe0;
+    background-color: var(--background-color-primary);
     padding-bottom: 70px;
+    color: var(--color-secondary);
 }
 
 .project-heading{
@@ -214,7 +262,10 @@ body{
 }
 
 #contact{
-    background-color: #4fb39c;
+    background-color: var(--color-primary);
+}
+.card{
+    background-color: var(--color-primary);
 }
 
 .margin-card{
@@ -228,8 +279,8 @@ body{
     padding-left: 80px;
     padding-right: 80px;
     margin: auto;    
-    background-color: black;
-    color: white;
+    background-color: var(--card-color);
+    color: var(--card-color-text);
 }
 
 .card-text{
@@ -252,19 +303,119 @@ body{
     border-radius: 50%;
 }
 .social-media a:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .card-mail{
     border: 2px solid #4fb39c;
-    color: white;
+    color: #4fb39c;
     border-radius: 20px;
 }
 .card-mail:hover{
     background-color: #4fb39c;
+    color: white;
 }
 .social-media p{
-    color: white;
+    color: var(--color-secondary);
     padding-top: 20px;
 }
+
+
+
+
+
+.theme{
+    display: flex;
+  width: 100%;
+  height: 100%;
+  /* background: var(--color-primary); */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme h1 {
+    color: var(--heading-color);
+    font-family: sans-serif;
+  }
+
+  .theme button {
+    color: var(--heading-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
