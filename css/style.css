@@ -67,7 +67,7 @@ body{
 }
 
 .fa-bars{
-    color: var(--color-secondary);
+    color: white;
     font-size: 25px;
 }
 
@@ -271,9 +271,6 @@ body{
     color: var(--hover-skills)!important;
 }
 
-.project-card .card{
-    /* width: 20rem; */
-}
 
 .card-body p{
     text-align: left;
