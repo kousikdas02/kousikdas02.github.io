@@ -80,7 +80,7 @@
             <div class="col-md-12 col-lg-4 col-xl-4">
                 <h3 style="color: #4fb39c;">About me</h3>
                 <p>
-                    <p>I am a computer science amd engineering student. A web developer enthusiast. I am earning web development and want to become a full stack developer. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
+                    <p>I am a computer science amd engineering student. A web developer enthusiast. I am learning web development and want to become a full stack developer. Also I like working in team, as one learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
                 </p>
             </div>
             <div class="col-md-12 col-lg-4 col-xl-4 my-pic">
@@ -321,7 +321,7 @@
                 </span>
               </li>
               <li>
-                <span>Visual Studio Code (3 yers)</span>
+                <span>Visual Studio Code (3 years)</span>
                 <span class="skill-score color">
                   <span><i class="fas fa-star"></i></span>
                   <span><i class="fas fa-star"></i></span>
@@ -347,10 +347,10 @@
         </div>
         <hr style="margin: 30px 0 50px;">
         <div class="container-fluid content-row">
-          <div class="row">
+          <div class="row project-card">
             <div class="col-md-4 pb-4">
               <div class="card h-100">
-                <img src="/images/img-1.PNG" class="card-img-top" alt="">
+                <img src="/images/img-1.PNG" class="card-img-top" alt="interactive-resume">
                 <div class="card-body">
                   <h5 class="card-title">Interactive Resume</h5>
                   <p class="card-text">This project is built with HTML, CSS, Bootstrap and JavaScript.</p>
@@ -360,8 +360,8 @@
             </div>
 
             <div class="col-md-4 pb-4">
-              <div class="card h-100">
-                <img src="/images/img-2.PNG" height="168px" class="card-img-top" alt="">
+              <div class="card h-100" style="margin: 0 auto;">
+                <img src="/images/img-2.PNG" height="168px" class="card-img-top" alt="weather-app">
                 <div class="card-body">
                   <h5 class="card-title">Weather App</h5>
                   <p class="card-text">This project is built Python tkinter library and 
@@ -372,8 +372,8 @@
             </div>
 
             <div class="col-md-4 pb-4">
-              <div class="card h-100">
-                <img src="/images/img-3.PNG" height="168px" class="card-img-top" alt="">
+              <div class="card h-100" style="margin-left: auto;">
+                <img src="/images/img-3.PNG" height="168px" class="card-img-top" alt="speech-to-text-note-pad">
                 <div class="card-body">
                   <h5 class="card-title">Speech to text notepad</h5>
                   <p class="card-text">This project is built Python tkinter library and speech recognition.</p>
