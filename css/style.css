@@ -6,26 +6,14 @@ body{
     padding: 0;
     /* box-sizing: border-box; */
 }
-.top{
-    background-image: url(/images/iron-man-trans.png);
-    background-color: var(--background-color-primary);
-    height: 45rem;
-    max-width: 100%;
-    text-align: center;
-    background-attachment:scroll;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-     
-}
+
 
 
 .theme-light{
     --color-primary: #ffffff;
     --color-secondary: #000;
-    --heading-color: #4fb39c;
     --background-color-primary: #f3efe0;
+    --background-color-secondary: #ffffff;
     --card-color: #000;
     --card-color-text:#ffffff;
     --hover-skills:#000;
@@ -35,56 +23,76 @@ body{
 .theme-dark{
     --color-primary: #000;
     --color-secondary: #ffffff;
-    --heading-color: #4fb39c;
-    --background-color-primary: #1a1a1a;
+    --background-color-primary: #2e2e2e;
+    --background-color-secondary: #222222;
     --card-color: #1a1a1a;
     --card-color-text:#ffffff;
     --hover-skills:#000;
 }
 
 
-
+.header{
+    background-image: url(/images/background-img2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 42rem;
+}
 
 
 .top-container{
-    /* height: 100vh; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* margin-top: 150px; */
+    height: 42rem;
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 450px;
+    
 }
+
 .top-container p{
-    font-size: 3.4vw;
+    font-size: 3.2vw;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    text-align: center;
-    /* position:sticky; */
-    /* color: white; */
-    color: var(--color-secondary);
+    color: white;
+    text-shadow:0px 4px 20px rgb(0, 0, 0);
 }
+
+#nav1{
+    background-color: black;
+    opacity: 0.8;
+}
+
+.nav-color{
+    color: var(--color-secondary);
+    background-color: var(--background-color-secondary);
+}
+
+.fa-bars{
+    color: var(--color-secondary);
+    font-size: 25px;
+}
+
+
 .typed-text{
-    color: #4fb39c;
+    color: #5ee4c5;
 }
 .cursor{
     display: inline-block;
-    font-size: 3vw;
-    width: 3px;
-    background-color: var(--color-secondary);
+    font-size: 2rvh;
+    width: 4px;
+    background-color: white;
     margin-left: 0.1rem;
     animation: blink 1s infinite;
 
 }
 @keyframes blink{
-    0% {background-color: var(--color-secondary);}
+    0% {background-color: white;}
     50% {background-color: transparent;}
     97% {background-color: transparent;}
-    100% {background-color: var(--color-secondary);}
+    100% {background-color: white;}
 }
 .navbar .navbar-nav li a{
-    color: var(--color-secondary);
+    color: white;
+    /* color: #ffffff; */
 }
 .navbar-nav{
     /* width: 100%; */
@@ -94,9 +102,9 @@ body{
 
 .nav-item a:hover{
     /* border-bottom: 2px solid #4fb39c; */
-    color: #4fb39c!important;
+    color: #5ee4c5!important;
     /* font-size: 20px; */
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: underline ;
     text-underline-position: under;
 }
@@ -113,8 +121,8 @@ body{
 }
 
 #profile{
-    padding-bottom: 120px;
-    background-color: var(--color-primary);
+    padding-bottom: 110px;
+    background-color: var(--background-color-secondary);
     color: var(--color-secondary);
 }
 .profile{
@@ -127,13 +135,13 @@ body{
     text-align: center;
 }
 .insta-follow{
-    color: var(--color-primary);
+    color: white;
     background-color: rgb(34, 136, 219);
     margin: 10px 0;
 }
 .insta-follow:hover{
-    color: var(--color-primary);
-    background-color: rgb(30, 108, 172);
+    color: white;
+    background-color: rgb(22, 100, 163);
 }
 #resume{
     margin-top: 20px;
@@ -164,10 +172,11 @@ body{
 #experiences{
     background-color: var(--background-color-primary);
     color: var(--color-secondary);
+    padding-bottom: 70px;
 }
 #experience-row{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 #experience-row h1{
     font-size: 50px;
@@ -181,13 +190,14 @@ body{
     
 }
 #abilities{
-    background-color: var(--color-primary);
+    background-color: var(--background-color-secondary);
     color: var(--color-secondary);
+    padding-bottom: 70px;
 }
 
 #abilities-row{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
     color: #4fb39c;
 }
 .no-bullets{
@@ -208,6 +218,17 @@ body{
     color: var(--hover-skills)!important;
 }
 
+#projetcs{
+    background-color: var(--background-color-primary);
+    padding-bottom: 90px;
+    color: var(--color-secondary);
+}
+
+.project-heading{
+    text-align: center;
+    padding-top: 70px;
+}
+
 .project-details{
     text-align: center;
 }
@@ -221,7 +242,7 @@ body{
 .project-details a:hover{
     color: white;
     background-color: #2c7a68;
-    color: var(--hover-skills)!important;
+    /* color: var(--hover-skills)!important; */
 }
 .github-color {
     background-color: #4fb39c;
@@ -250,22 +271,26 @@ body{
     color: var(--hover-skills)!important;
 }
 
-#projetcs{
-    background-color: var(--background-color-primary);
-    padding-bottom: 70px;
-    color: var(--color-secondary);
+.card-body p{
+    text-align: left;
+}
+.card-body a{
+    background-color: #4fb39c;
+    color: white;
 }
 
-.project-heading{
-    text-align: center;
-    padding-top: 50px;
+.card-body a:hover{
+    color: white;
+    background-color: #2c7a68;
 }
+
 
 #contact{
-    background-color: var(--color-primary);
+    background-color: var(--background-color-secondary);
+    padding-bottom: 10px;
 }
 .card{
-    background-color: var(--color-primary);
+    background-color: var(--background-color-secondary);
 }
 
 .margin-card{
@@ -279,8 +304,8 @@ body{
     padding-left: 80px;
     padding-right: 80px;
     margin: auto;    
-    background-color: var(--card-color);
-    color: var(--card-color-text);
+    background-color: var(--background-color-primary);
+    color: var(--color-secondary);
 }
 
 .card-text{
@@ -303,8 +328,8 @@ body{
     border-radius: 50%;
 }
 .social-media a:hover{
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    background-color: var(--background-color-primary);
+    color: #4fb39c;
 }
 
 .card-mail{
@@ -419,3 +444,8 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .top{
+      background-color: var(--color-primary);
+  }
+

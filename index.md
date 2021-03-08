@@ -13,23 +13,36 @@
     <!--Style.css-->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="dark-mode.css">
+
     <!--Favicon-->
     <link rel="icon" href="favicon.ico?">
     <title>Kousik Das - Interactive Resume</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container top">
-        <nav class="navbar navbar-expand-lg navbar-light  navbar-transparent ">
-            <div class="container-fluid full">
-              <!-- <a class="navbar-brand" href="#"></a> -->
+        
+    <header class="header">
+      <div class="container">
+          <nav class="navbar navbar-expand-md fixed-top" id="nav1">
+            <div class="container-fluid">
+              <div class="d-flex ml-auto">
+                <ul class="navbar-nav flex-row">
+                  <div class="theme">
+                    <label id="switch" class="switch">
+                            <input type="checkbox" onchange="toggleTheme()" id="slider">
+                            <span class="slider round"></span>
+                    </label>
+                  </div>
+                </ul>
+    
+              </div>
+    
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
               </button>
+    
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="#profile">Profile</a>
                   </li>
@@ -43,22 +56,22 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#projetcs">Projetcs</a>
                   </li>
-                  
                 </ul>
-                <a class="btn contactnav" href="mailto:kousikdas02@gmail.com.com" role="button" style="border: 2px solid #4fb39c; border-radius: 10px;">Contact Me</a>
               </div>
             </div>
+                
           </nav>
         <div class="top-container">
-            <p>Hi, I am Kousik, a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-        
+  
+              <p>Hi, I am Kousik, a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+          
         </div>
-
-        
-    </div>
-
+      </div>
+      
+    </header>
+    
     <div id="profile" class="container-fluid">
-        <div class="container">
+      <div class="container">
           <div id="profile-row" class="row">
             <h1 class="profile">Profile</h1> 
         </div>
@@ -99,8 +112,8 @@
           <a class="btn btn-lg print-resume" role="button" onclick="window.open('https://drive.google.com/file/d/1ETvDzcdocQ19MCpcyvniovU4xSPEIvC1/view?usp=sharing')">Print Resume</a>
         </div>
         
+      </div>
     </div>
-        </div>
 
     <div id="experiences" class="container-fluid">
       <div class="container">
@@ -227,7 +240,7 @@
 
         <div class="project-details">
           <p>This project is built using HTML, CSS, Bootstrap and JavaScript.</p>
-          <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/portfolio-website.git')">See Project on GitHub</a>
+          <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/kousikdas02.github.io')">See Project on GitHub</a>
         </div>
         <hr style="margin: 40px 0;">
 
@@ -319,7 +332,7 @@
             </ul>
           </div>
         </div>
-        <hr style="margin: 40px 0;">
+        <!-- <hr style="margin: 40px 0;"> -->
       </div>
     </div>
 
@@ -333,48 +346,43 @@
           </p>
         </div>
         <hr style="margin: 30px 0 50px;">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Portfolio Website</h5>
-                <p class="card-text">Portfolio Website built with HTML, CSS, Bootstrap and JavaScript</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
+        <div class="container-fluid content-row">
+          <div class="row">
+            <div class="col-md-4 pb-4">
+              <div class="card h-100">
+                <img src="/images/img-1.PNG" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Interactive Resume</h5>
+                  <p class="card-text">This project is built with HTML, CSS, Bootstrap and JavaScript.</p>
+                  <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/kousikdas02.github.io')">GitHub Link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 pb-4">
+              <div class="card h-100">
+                <img src="/images/img-2.PNG" height="168px" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <p class="card-text">This project is built Python tkinter library and 
+                    Weather API - OpenWeatherMap.</p>
+                  <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/weather-app')">GitHub Link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 pb-4">
+              <div class="card h-100">
+                <img src="/images/img-3.PNG" height="168px" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Speech to text notepad</h5>
+                  <p class="card-text">This project is built Python tkinter library and speech recognition.</p>
+                  <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/speech-to-text-note-pad')">GitHub Link</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">GUI APP For Real Time Weather Detection</h5>
-                <p class="card-text">A GUI app built using Python that detects real-time weather.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="w-100 pt-4"></div>
-          <div class="col-md-6">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Speech To Text Notepad</h5>
-                <p class="card-text">A GUI app built with Python Tkinter library.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Sentiment Analysis From Text</h5>
-                <p class="card-text">Sentiment Analysis with NLTK's Vader analyzer.</p>
-                <a href="#" class="btn btn-primary">See Project on GitHub</a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -395,7 +403,7 @@
                   </div>
                </div>
           </div> 
-  </div>
+        </div>
       </div>
       <div class="social-media">
         <a class="btn linkedin" role="button" onclick="window.open('https://www.linkedin.com/in/kousik-das-493300204/')"><i class="fab fa-linkedin-in fa-2x"></i></a>
@@ -404,6 +412,40 @@
       </div>
     </div>
 
+
+   
+
+    <script>
+       // function to set a given theme/color-scheme
+       function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+            }
+        })();
+
+    </script>
+    
+
+    
     <!--Main JavaScript File-->
     <script src="main.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
