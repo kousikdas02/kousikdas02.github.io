@@ -18,6 +18,7 @@
     <!--Favicon-->
     <link rel="icon" href="favicon.ico?">
     <title>Kousik Das - Interactive Resume</title>
+
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
         
@@ -109,7 +110,7 @@
           </p>
         </div>
         <div class="text-center">
-          <a class="btn btn-lg print-resume" role="button" onclick="window.open('https://drive.google.com/file/d/1ETvDzcdocQ19MCpcyvniovU4xSPEIvC1/view?usp=sharing')">Print Resume</a>
+          <a class="btn btn-lg print-resume" role="button" onclick="window.open('https://drive.google.com/file/d/17ENwSYj7O9uacBVA2dq_1OtwKWHSdgeI/view?usp=sharing')">Print Resume</a>
         </div>
         
       </div>
@@ -131,13 +132,15 @@
             </div>
             <div class="experience row">
               <div class="col-md-6">
-                <h5><strong>Happies Tech - A Digital IT Hub</strong></h5>
-                <p>Feb 2021 - Present</p>
+                <h5><strong>Doc2Doors Technologies PVT LTD</strong></h5>
+                <p>Mar 2021 - Present</p>
+
               </div>
               <div class="col-md-6">
                 <p>
-                  <strong>Web Developer Intern</strong> <br>
-                  <span>Working as a web developer intern at Happies Tech, a Mumbai based company. I am learing to apply my knowledge of web development. I am also learning new technologies.</span> <br>
+                  <strong>UI Developer Intern</strong> <br>
+                  <span>Working as a UI developer intern at Doc2Doors Technologies, a Surat, Gujrat based company. I have created the entire UI of Doc2Doors website. I am also learning new technologies.</span> <br>
+                  <p>Link - <a href="https://test.doc2doors.com/">Doc2Doors</a></p>
                   <span class="color"><i class="fas fa-map-marker-alt"></i> Work From Home</span>
                 </p>
               </div>
@@ -149,7 +152,7 @@
           <div class="row mb-4">
             <h3 style="color: #4fb39c">Educations</h3>
           </div>
-          
+
           <div class="education1 row">
             <div class="col-md-6 mb-3">
               <h5><strong>Maulana Abul Kalam Azad University <br> of Technology</strong></h5>
@@ -177,7 +180,7 @@
         </div>
       </div>
     </div>
-    
+
     <div id="abilities" class="container-fluid">
       <div class="container">
         <div id="abilities-row" class="row">
@@ -346,11 +349,11 @@
           </p>
         </div>
         <hr style="margin: 30px 0 50px;">
-        <div class="container-fluid content-row">
+        <div class="container-fluid content-row p-2">
           <div class="row project-card">
             <div class="col-md-4 pb-4">
               <div class="card h-100">
-                <img src="/images/img-1.PNG" class="card-img-top" alt="interactive-resume">
+                <img src="/images/img-1.PNG" height="168px" class="card-img-top" alt="interactive-resume">
                 <div class="card-body">
                   <h5 class="card-title">Interactive Resume</h5>
                   <p class="card-text">This project is built with HTML, CSS, Bootstrap and JavaScript.</p>
@@ -364,7 +367,7 @@
                 <img src="/images/img-2.PNG" height="168px" class="card-img-top" alt="weather-app">
                 <div class="card-body">
                   <h5 class="card-title">Weather App</h5>
-                  <p class="card-text">This project is built Python tkinter library and 
+                  <p class="card-text">This project is built Python tkinter library and
                     Weather API - OpenWeatherMap.</p>
                   <a class="btn" role="button" onclick="window.open('https://github.com/kousikdas02/weather-app')">GitHub Link</a>
                 </div>
@@ -382,7 +385,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -402,7 +405,7 @@
                     <a class="btn card-mail" href="mailto:kousikdas02@gmail.com.com" role="button">Contact Me</a>
                   </div>
                </div>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="social-media">
@@ -413,7 +416,7 @@
     </div>
 
 
-   
+
 
     <script>
        // function to set a given theme/color-scheme
@@ -443,9 +446,9 @@
         })();
 
     </script>
-    
 
-    
+
+
     <!--Main JavaScript File-->
     <script src="main.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -458,5 +461,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+
   </body>
 </html>
